@@ -202,7 +202,7 @@ async def on_guild_channel_pins_update(channel, last_pin):
 
                 # remove this message if you do not want the bot to send a message when you pin a message
                 await last_pinned.channel.send(
-                    "See oldest pinned message in " + channel.guild.get_channel(int(pins_channel)).mention)
+                    #"See oldest pinned message in " + channel.guild.get_channel(int(pins_channel)).mention)
                 await last_pinned.unpin()
     except:
         print("unpinned a message, not useful for bot so does nothing")
